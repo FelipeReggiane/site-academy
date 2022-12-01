@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  console.log(process.env.API_URL_STRAPI);
+  console.log(process.env.NEXT_PUBLIC_ENV_VARIABLE);
   return (
     <div className={styles.container}>
       <Head>
@@ -11,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Hello World</h1>
+      <p>{process.env.NEXT_PUBLIC_ENV_VARIABLE}</p>
     </div>
   );
 }

@@ -20,7 +20,7 @@ export async function getStaticProps() {
     const [{ value: dataPosts }] = await Promise.allSettled([
       Request({
         method: "GET",
-        url: `http://localhost:1337/api/posts?populate=deep`,
+        url: `https://strapi-production-a226.up.railway.app/api/posts?populate=deep`,
       }),
     ]);
 
@@ -40,7 +40,7 @@ export async function getStaticProps() {
     console.log(error);
     return {
       props: {
-        data: { Acessibilidade: [] },
+        data: { posts: [] },
         error: true,
       },
     };
