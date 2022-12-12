@@ -1,0 +1,155 @@
+.galery_Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 99px);
+  background-color: transparent;
+}
+
+.galery_Container_content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.galery_actions {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+
+.galery_image_leftHover {
+  position: absolute;
+  left: 0;
+  clip-path: polygon(100% 0, 86% 100%, 0 100%, 0 0);
+  height: calc(100vh - 99px);
+  width: 55% !important;
+  z-index: 0;
+  transition: all 0.4s ease-out;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.galery_image_left {
+  position: absolute;
+  left: 0;
+  clip-path: polygon(0 0, -16% 100%, 0 100%, 0 0);
+  height: calc(100vh - 99px);
+  width: 55% !important;
+  z-index: 0;
+  transition: all 0.4s ease-out;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.galery_image_rightHover {
+  position: absolute;
+  right: 0;
+  clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+  height: calc(100vh - 99px) !important;
+  width: 55% !important;
+  z-index: 0;
+
+  transition: all 0.4s ease-out;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.galery_image_right {
+  position: absolute;
+  right: 0;
+  clip-path: polygon(108% 0, 100% 0, 100% 100%, 100% 100%);
+  height: calc(100vh - 99px) !important;
+  width: 55% !important;
+  z-index: 0;
+  transition: all 0.4s ease-out;
+
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.galery_text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  line-height: 56px;
+}
+
+.galery_title {
+  font-style: italic;
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.galery_subtitle {
+  font-style: italic;
+  font-size: 80px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 110px;
+}
+
+.galery_div_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 70px;
+}
+
+.galery_button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.galery_button:hover {
+  background-color: #d3fa3a;
+  color: black;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+  -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  transform: scaleX(1);
+}
+
+.galery_div_button_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 70px;
+}
+
+.galeryLine_Container_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+
+.galeryLine_images {
+  display: flex;
+  gap: 80px;
+}
+
+.galeryLine_image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}

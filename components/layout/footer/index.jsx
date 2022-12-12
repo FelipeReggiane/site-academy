@@ -13,7 +13,6 @@ export default function Footer() {
           height="30px"
         />
       </Link>
-      <p>Powered by Felipe</p>
       <div className={styles.footer_linkedin}>
         <Link href={"https://www.linkedin.com/in/felipe-reggiane-9bb30a224/"}>
           <img
@@ -24,6 +23,7 @@ export default function Footer() {
           />
         </Link>
       </div>
+      <p>Powered by Felipe Reggiane</p>
     </div>
   );
 }

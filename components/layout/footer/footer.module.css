@@ -1,10 +1,16 @@
 .footer_container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
   align-items: center;
-  padding: 0px 65px 30px 65px;
-  margin-top: 40px;
+  padding: 40px 65px 40px 65px;
+  background-color: black;
   /* position: absolute; */
   /* bottom: 0; */
+}
+
+.footer_container p {
+  margin: 0;
 }
