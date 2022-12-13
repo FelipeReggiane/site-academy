@@ -9,8 +9,7 @@ export default function Footer() {
         <img
           src={Images.logoFooter.src}
           alt="Logo Rethink"
-          width="140px"
-          height="30px"
+          className={styles.footer_logo_rethink}
         />
       </Link>
       <div className={styles.footer_linkedin}>
@@ -20,6 +19,7 @@ export default function Footer() {
             alt="Logo Linkedin"
             width="26px"
             height="24px"
+            className={styles.footer_logo_linkedin}
           />
         </Link>
       </div>

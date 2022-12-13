@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./styles/galery-slide.module.css";
+import Link from "next/link";
 
 const getGalerySlide = (props) => {
   const [isHoverLeft, setIsHoverLeft] = useState(false);
@@ -32,30 +33,47 @@ const getGalerySlide = (props) => {
         />
         <div className={styles.galery_actions}>
           <div className={styles.galery_div_button}>
-            <button
+            <div
+              className={
+                isHoverLeft
+                  ? styles.galery_button_annimationHover
+                  : styles.galery_button_annimation
+              }
+            ></div>
+            <a
               className={styles.galery_button}
               onMouseEnter={toggleHoverLeft}
               onMouseLeave={toggleHoverLeft}
             >
               {props.Button_Left}
-            </button>
+            </a>
           </div>
           <div className={styles.galery_text}>
             <span className={styles.galery_title}>{props.Title}</span>
             <span className={styles.galery_subtitle}>{props.Subtitle}</span>
           </div>
           <div className={styles.galery_div_button}>
-            <button
+            <div
+              className={
+                isHoverRight
+                  ? styles.galery_button_annimationHover
+                  : styles.galery_button_annimation
+              }
+            ></div>
+            <a
               className={styles.galery_button}
               onMouseEnter={toggleHoverRight}
               onMouseLeave={toggleHoverRight}
+              href={"/sobre"}
             >
               {props.Button_Right}
-            </button>
+            </a>
           </div>
         </div>
         <div className={styles.galeryLine_Container_content}>
-          <span>{props.galery_line.title}</span>
+          <span className={styles.galeryLine_title}>
+            {props.galery_line.title}
+          </span>
           <div className={styles.galeryLine_images}>
             {props.galery_line.images.map((image) => (
               <img src={image.url} className={styles.galeryLine_image}></img>

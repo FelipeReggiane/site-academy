@@ -9,18 +9,17 @@ export default function Header() {
         <img
           src={Images.logoHeader.src}
           alt="Logo Rethink"
-          width="140px"
-          height="30px"
+          className={styles.header_img}
         />
       </Link>
       <div className={styles.header_links}>
-        <Link href={{ pathname: "/posts" }}>
+        <Link href={{ pathname: "/sobre" }}>
           <div className={styles.header_link}>Projetos</div>
         </Link>
-        <Link href={{ pathname: "/posts" }}>
+        <Link href={{ pathname: "/sobre" }}>
           <div className={styles.header_link}>Eventos</div>
         </Link>
-        <Link href={{ pathname: "/posts" }}>
+        <Link href={{ pathname: "/sobre" }}>
           <div className={styles.header_link}>Equipe</div>
         </Link>
       </div>

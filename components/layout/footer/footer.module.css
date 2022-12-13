@@ -7,10 +7,61 @@
   align-items: center;
   padding: 40px 65px 40px 65px;
   background-color: black;
-  /* position: absolute; */
-  /* bottom: 0; */
+}
+
+.footer_logo_rethink {
+  width: 140px;
+  height: 30px;
+}
+
+.footer_logo_linkedin {
+  width: 26px;
+  height: 24px;
 }
 
 .footer_container p {
   margin: 0;
+}
+
+@media (max-width: 550px) {
+  .footer_container {
+    gap: 25px;
+    padding: 30px 65px 30px 65px;
+  }
+
+  .footer_logo_rethink {
+    width: 100px;
+    height: 25px;
+  }
+
+  .footer_logo_linkedin {
+    width: 20px;
+    height: 18px;
+  }
+
+  .footer_container p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 330px) {
+  .footer_container {
+    gap: 25px;
+    padding: 30px 65px 30px 65px;
+  }
+
+  .footer_logo_rethink {
+    width: 80px;
+    height: 15px;
+    object-fit: cover;
+  }
+
+  .footer_logo_linkedin {
+    width: 15px;
+    height: 13px;
+  }
+
+  .footer_container p {
+    font-size: 10px;
+  }
 }

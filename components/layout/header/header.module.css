@@ -6,11 +6,16 @@
   padding: 65px 65px 0px 65px;
 }
 
+.header_img {
+  width: 140px;
+  height: 30px;
+}
+
 .header_links {
   display: flex;
   align-items: center;
   gap: 24px;
-  margin-right: 24px;
+  /* margin-right: 24px; */
 }
 
 .header_link {
@@ -28,4 +33,28 @@
 
 .header_link:hover {
   color: #d3f12a;
+}
+
+@media (max-width: 550px) {
+  .haeader_container {
+    padding: 75px 20px 0px 20px;
+  }
+
+  .header_img {
+    width: 100px;
+    height: 20px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 330px) {
+  .haeader_container {
+    padding: 75px 2px 0px 2px;
+  }
+
+  .header_links {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+  }
 }
