@@ -1,5 +1,5 @@
 import styles from "./footer.module.css";
-import { Images } from "../../../assets/index.ts";
+import { Images } from "../../assets/index.ts";
 import Link from "next/link";
 
 export default function Footer() {

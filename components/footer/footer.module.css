@@ -6,7 +6,7 @@
   gap: 30px;
   align-items: center;
   padding: 40px 65px 40px 65px;
-  background-color: black;
+  background-color: var(--color-black);
 }
 
 .footer_logo_rethink {

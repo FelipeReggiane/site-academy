@@ -1,0 +1,32 @@
+.galery_container {
+  display: flex;
+  background-color: var(--color-detail);
+  flex-direction: column;
+  width: 100%;
+  min-height: calc(100vh - 99px);
+  height: fit-content;
+}
+
+.galery_text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20% 0px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.galery_title {
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 80px;
+  width: 72%;
+}
+
+.galery_subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+}

@@ -3,6 +3,7 @@ import styles from "./styles/galery-slide.module.css";
 import Link from "next/link";
 
 const getGalerySlide = (props) => {
+  console.log(props);
   const [isHoverLeft, setIsHoverLeft] = useState(false);
   const [isHoverRight, setIsHoverRight] = useState(false);
 
@@ -15,7 +16,7 @@ const getGalerySlide = (props) => {
       <div className={styles.galery_Container_content}>
         <img
           src={props.Image_Left.url}
-          alt=""
+          alt="Formatura da turma Rethink Academy 1"
           className={
             isHoverLeft
               ? styles.galery_image_leftHover
@@ -24,7 +25,7 @@ const getGalerySlide = (props) => {
         />
         <img
           src={props.Image_Right.url}
-          alt=""
+          alt="Moço do sorriso seduzente"
           className={
             isHoverRight
               ? styles.galery_image_rightHover
@@ -44,6 +45,9 @@ const getGalerySlide = (props) => {
               className={styles.galery_button}
               onMouseEnter={toggleHoverLeft}
               onMouseLeave={toggleHoverLeft}
+              onFocus={toggleHoverLeft}
+              onBlur={toggleHoverLeft}
+              href={"/sobre"}
             >
               {props.Button_Left}
             </a>
@@ -64,6 +68,8 @@ const getGalerySlide = (props) => {
               className={styles.galery_button}
               onMouseEnter={toggleHoverRight}
               onMouseLeave={toggleHoverRight}
+              onFocus={toggleHoverRight}
+              onBlur={toggleHoverRight}
               href={"/sobre"}
             >
               {props.Button_Right}
@@ -75,8 +81,13 @@ const getGalerySlide = (props) => {
             {props.galery_line.title}
           </span>
           <div className={styles.galeryLine_images}>
-            {props.galery_line.images.map((image) => (
-              <img src={image.url} className={styles.galeryLine_image}></img>
+            {props.galery_line.images.map((image, index) => (
+              <img
+                key={index}
+                src={image.url}
+                alt="Pessoas do squad site rethink"
+                className={styles.galeryLine_image}
+              ></img>
             ))}
           </div>
         </div>

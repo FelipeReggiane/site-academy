@@ -1,6 +1,7 @@
 import styles from "./header.module.css";
-import { Images } from "../../../assets/index.ts";
+import { Images } from "../../assets/index.ts";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
   return (
@@ -13,14 +14,14 @@ export default function Header() {
         />
       </Link>
       <div className={styles.header_links}>
-        <Link href={{ pathname: "/sobre" }}>
-          <div className={styles.header_link}>Projetos</div>
+        <Link className={styles.header_link} href={{ pathname: "/sobre" }}>
+          <p>Projetos</p>
         </Link>
-        <Link href={{ pathname: "/sobre" }}>
-          <div className={styles.header_link}>Eventos</div>
+        <Link className={styles.header_link} href={{ pathname: "/sobre" }}>
+          <p>Eventos</p>
         </Link>
-        <Link href={{ pathname: "/sobre" }}>
-          <div className={styles.header_link}>Equipe</div>
+        <Link className={styles.header_link} href={{ pathname: "/sobre" }}>
+          <p>Equipe</p>
         </Link>
       </div>
     </div>

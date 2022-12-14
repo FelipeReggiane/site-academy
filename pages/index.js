@@ -4,6 +4,7 @@ import Image from "next/image";
 import PageComponents from "../components/pageComponents";
 
 export default function Home({ data }) {
+  console.log(data);
   return (
     <div>
       <Head>
@@ -21,7 +22,7 @@ export async function getStaticProps() {
     const [{ value: data }] = await Promise.allSettled([
       Request({
         method: "GET",
-        url: `https://strapi-production-a226.up.railway.app/api/homes?populate=deep`,
+        url: `http://localhost:1337/api/homes?populate=deep`,
       }),
     ]);
 
