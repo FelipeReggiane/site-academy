@@ -22,7 +22,7 @@ export async function getStaticProps() {
     const [{ value: data }] = await Promise.allSettled([
       Request({
         method: "GET",
-        url: `http://localhost:1337/api/homes?populate=deep`,
+        url: `http://strapi-production-a226.up.railway.app/api/homes?populate=deep`,
       }),
     ]);
 
