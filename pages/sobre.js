@@ -4,7 +4,6 @@ import PageComponents from "../components/pageComponents";
 import Request from "../utils/requester";
 
 export default function sobre({ data }) {
-  console.log(data);
   return (
     <div>
       <Head>
@@ -25,7 +24,6 @@ export async function getStaticProps() {
         url: `http://localhost:1337/api/sobres?populate=deep`,
       }),
     ]);
-    // console.log(data.data);
     return {
       props: {
         data: {

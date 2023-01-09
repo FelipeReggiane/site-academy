@@ -1,21 +1,24 @@
 .galery_container {
   display: flex;
-  background-color: var(--color-detail);
+  background-image: linear-gradient(var(--color-dark) 2%, var(--color-detail));
   flex-direction: column;
   width: 100%;
   min-height: calc(100vh - 99px);
   height: fit-content;
+  max-height: fit-content;
 }
 
 .galery_text {
   display: flex;
   flex-direction: column;
-  padding: 20px 20% 0px;
+  padding: 50px 20% 50px;
+  margin-bottom: 50px;
   width: 100%;
   align-items: flex-start;
 }
 
 .galery_title {
+  color: var(--color-light);
   font-size: 45px;
   font-weight: 400;
   font-style: normal;
@@ -25,8 +28,14 @@
 }
 
 .galery_subtitle {
+  color: var(--color-light);
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
+}
+
+.galery_images_container {
+  width: 100%;
+  height: fit-content;
 }

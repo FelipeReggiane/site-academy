@@ -4,7 +4,6 @@ import Image from "next/image";
 import PageComponents from "../components/pageComponents";
 
 export default function Home({ data }) {
-  console.log(data);
   return (
     <div>
       <Head>

@@ -1,9 +1,8 @@
 import { useState } from "react";
-import styles from "./styles/galery-slide.module.css";
+import styles from "./galery-slide.module.css";
 import Link from "next/link";
 
 const getGalerySlide = (props) => {
-  console.log(props);
   const [isHoverLeft, setIsHoverLeft] = useState(false);
   const [isHoverRight, setIsHoverRight] = useState(false);
 
